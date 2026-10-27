@@ -1,0 +1,28 @@
+{
+  "name": "hotelpro-hotel-booking-and-management-system",
+  "version": "1.0.0",
+  "description": "HotelPro – Complete Hotel Booking and Management System (MERN Stack)",
+  "private": true,
+  "scripts": {
+    "server": "npm --prefix server start",
+    "server:dev": "npm --prefix server run dev",
+    "client": "npm --prefix client dev",
+    "client:build": "npm --prefix client run build",
+    "seed": "npm --prefix server run seed",
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev": "node -e \"const { spawn } = require('child_process'); const s = spawn('npm', ['--prefix', 'server', 'start'], { stdio: 'inherit', shell: true }); const c = spawn('npm', ['--prefix', 'client', 'run', 'dev'], { stdio: 'inherit', shell: true }); process.on('SIGINT', () => { s.kill(); c.kill(); process.exit(); });\""
+  },
+  "keywords": [
+    "hotel-booking",
+    "hotel-management",
+    "react",
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "bootstrap5",
+    "full-stack"
+  ],
+  "author": "HotelPro Team",
+  "license": "MIT"
+}
